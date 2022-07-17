@@ -21,7 +21,6 @@
 }
 .body-title span{
     position: relative;
-    font-style:italic;
     z-index: 1;
     background:var(--nl-background-color-dark);
     /* text padding */
@@ -66,7 +65,6 @@
     margin: 0;
     padding: 0 0 0.5rem 0.5rem;
 }
-
 .content-title{
     font-weight: bold;
 }

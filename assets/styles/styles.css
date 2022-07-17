@@ -28,6 +28,14 @@ body{
 h1{
     color: var(--nl-color-text);
 }
+
+/* components */
+.page-title{
+    font-size:36px;
+    font-weight:bold;
+    font-style:italic;
+    margin: 1rem 0;
+}
 p{
     color: var(--nl-color-text);
 }
@@ -53,11 +61,11 @@ article{
 }
 .article-drophead{
     color: var(--nl-color-text-light);
-
 }
 .article-headline{
 
 }
+
 /* divider line */
 .line-thin{
     width: auto;
@@ -116,6 +124,9 @@ article{
     width:100px;
 }
 
+.banner-wrapper{
+    display:flex;
+}
 .banner{
     width: 100%;
     object-fit: cover;
