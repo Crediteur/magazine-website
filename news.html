@@ -8,6 +8,7 @@
     <title>News Site</title>
 
     <link href="assets/styles/styles.css" rel="stylesheet" />
+    <link href="assets/styles/news.css" rel="stylesheet" />
   </head>
 
   <body>
@@ -15,35 +16,128 @@
     <header>
       <section>
         <!-- logo -->
-        <div><a href="index.html">Logo</a></div>
+        <div class="logo-wrapper">
+          <a href="index.html">
+            <img
+              class="logo"
+              src="assets\images\news-logo.png"
+              srcset="assets\images\news-logo.svg"
+            />
+          </a>
+        </div>
 
         <!-- navbar -->
-        <ul>
-          <li><a href="article.html">News</a></li>
-          <li><a href="news.html">Tech</a></li>
-          <li><a href="podcast.html">Podcasts</a></li>
-          <li><a href="about.html">About</a></li>
-        </ul>
-        <!-- banner -->
-        <div>
-            <img src="" />
+        <div class="navbar">
+          <ul>
+            <li><a href="article.html">Featured</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="podcast.html">Podcasts</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
         </div>
       </section>
     </header>
 
-
     <!-- body 1-->
-    <section>
-      <h1>News Page</h1>
+    <section class="section-padding body-1">
+      <div class="page-start">
+        <h1 class="page-title">Latest News</h1>
+        <p class="article-drophead">Explore the latest on everything you need for Technology.</p>
+        <div class="line-thick"></div>
+      </div>
 
-      <article></article>
+      <!-- articles -->
+      <div class="big-row-article">
+        <div class="image-wrapper">
+          <a href="article.html">
+            <img src="assets\images\abstract-crypto-nft-art.jpg" alt="Abstract NFT art">
+          </a>
+        </div>
+        <div class="content">
+          <p class="content-title"><a href="article.html">The government detectives and private eyes of the crypto age</a></p>
+          <p class="article-byline">By <a href="about.html">John Doe</a> | July 2</p>
+        </div>
+      </div>
+
+      <div class="line-thin"></div>
+
+      <div class="row-article">
+        <div class="image-wrapper">
+          <a href="article.html">
+            <img src="assets\images\architectural-augmented-reality-home-renovation.jpg" alt="Augmented Reality home renovation">
+          </a>
+        </div>
+        <div class="content">
+          <p class="content-title"><a href="article.html">Title of Main Article</a></p>
+          <p class="article-byline">By <a href="about.html">John Doe</a> | July 2</p>
+        </div>
+      </div>
+
+      <div class="line-thin"></div>
+
+      <div class="row-article">
+        <div class="image-wrapper">
+          <a href="article.html">
+            <img src="assets\images\architecture-post-pandemic.jpg" alt="Architecture post pandemic">
+          </a>
+        </div>
+        <div class="content">
+          <p class="content-title"><a href="article.html">Title of Main Article zz zzzz zzzzzzz</a></p>
+          <p class="article-byline">By <a href="about.html">John Doe</a> | July 2</p>
+        </div>
+      </div>
+
+      <div class="line-thin"></div>
+
+      <div class="row-article">
+        <div class="image-wrapper">
+          <a href="article.html">
+            <img src="assets\images\augmented-reality-glasses.jpg" alt="Augmented reality glasses">
+          </a>
+        </div>
+        <div class="content">
+          <p class="content-title"><a href="article.html">Title of Main Article</a></p>
+          <p class="article-byline">By <a href="about.html">John Doe</a> | July 2</p>
+        </div>
+      </div>
+
+      <div class="line-thin"></div>
+
+      <div class="row-article">
+        <div class="image-wrapper">
+          <a href="article.html">
+            <img src="assets\images\Space_Kids.jpg" alt="Kids playing with augmented reality cardboard">
+          </a>
+        </div>
+        <div class="content">
+          <p class="content-title"><a href="article.html">Title of Main Article</a></p>
+          <p class="article-byline">By <a href="about.html">John Doe</a> | July 2</p>
+        </div>
+      </div>
     </section>
 
     <!-- body 2-->
-    <section></section>
+    <section>
+
+    </section>
 
     <!-- footer -->
-    <footer></footer>
+    <footer>
+      <section class="section-padding">
+        <!-- logo -->
+          <a href="index.html">
+            <img
+              class="logo"
+              src="assets\images\news-logo.png"
+              srcset="assets\images\news-logo.svg"
+            />
+          </a>
+          <div>
+            <p>Terms of Use • Privacy Notice • Cookie Policy • FAQ • Accessibility • Contact</p>
+            <p>Youtube • Instagram • Facebook</p>
+          </div>
+      </section>
+    </footer>
 
     <!-- JS script -->
     <script type="text/javascript" src="asset/scripts/script.js"></script>
