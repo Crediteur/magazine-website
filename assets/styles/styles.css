@@ -24,6 +24,7 @@ body{
     background-color: var(--nl-background-color-dark);
     padding: 0px;
     margin: 0px;
+    overflow-x: hidden;
 }
 h1{
     color: var(--nl-color-text);
@@ -124,9 +125,6 @@ article{
     width:100px;
 }
 
-.banner-wrapper{
-    display:flex;
-}
 .banner{
     width: 100%;
     object-fit: cover;

@@ -2,6 +2,9 @@
 .body-1{
     padding-bottom: 1rem;
 }
+.banner-wrapper{
+    display:flex;
+}
 .body-title{
     position:relative;
     text-align: center;
