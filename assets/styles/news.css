@@ -1,56 +1,166 @@
 /* body 1 */
-.body-1{
-    margin-bottom: 1rem;
+.body-1 {
+  margin-bottom: 1rem;
 }
-.page-start{
-    /* display:flex;
+.page-start {
+  /* display:flex;
     flex-direction:column;
     justify-content:space-between; */
-    text-align: center;
-    margin-top: 2rem;
+  text-align: center;
+  margin-top: 2rem;
 }
-.page-start .line-thick{
-    margin: 1.5rem 0;
+.page-start .line-thick {
+  margin: 1.5rem 0;
 }
 
 /* body articles */
-.big-row-article{
-    display: flex;
+.big-row-article {
+  display: flex;
 }
-.big-row-article .image-wrapper{
-    max-width: 50%;
+.big-row-article .image-wrapper {
+  max-width: 50%;
 }
-.big-row-article .image-wrapper a{
-    display:flex;
+.big-row-article .image-wrapper a {
+  display: flex;
 }
-.big-row-article .image-wrapper a img{
-    width:100%;
-    object-fit: cover;
-    aspect-ratio: 3 / 2;
+.big-row-article .image-wrapper a img {
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 3 / 2;
 }
-.big-row-article p{
-    margin: 0;
-    padding: 0 0 0.5rem 0.5rem;
+.big-row-article p {
+  margin: 0;
+  padding: 0 0 0.5rem 0.5rem;
 }
 
-.row-article{
-    display: flex;
+.row-article {
+  display: flex;
 }
-.row-article .image-wrapper{
-    max-width: 30%;
+.row-article .image-wrapper {
+  max-width: 30%;
 }
-.row-article .image-wrapper a{
-    display:flex;
+.row-article .image-wrapper a {
+  display: flex;
 }
-.row-article .image-wrapper a img{
-    width:100%;
-    object-fit: cover;
-    aspect-ratio: 3 / 2;
+.row-article .image-wrapper a img {
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 3 / 2;
 }
-.row-article p{
-    margin: 0;
-    padding: 0 0 0.5rem 0.5rem;
+.row-article p {
+  margin: 0;
+  padding: 0 0 0.5rem 0.5rem;
 }
-.content-title{
-    font-weight: bold;
+.content-title {
+  font-weight: bold;
+}
+
+/* body 2 */
+.body-2 {
+  margin-bottom: 1rem;
+}
+.body-title {
+  position: relative;
+  text-align: left;
+}
+.body-title:before {
+  content: "";
+  display: block;
+  border-top: solid 3px var(--nl-color-quaternary);
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  z-index: 0;
+
+  /* left and right margin */
+  margin-left: 0;
+  width: calc(100%);
+}
+.body-title span {
+  position: relative;
+  z-index: 1;
+  background: var(--nl-background-color-dark);
+  /* text padding */
+  padding: 0 1rem 0 0;
+}
+
+.featured-article {
+  display: flex;
+  align-items: flex-end;
+  background-image: url("../images/metaverse-painting-nft-augmented-reality.jpg");
+  height: calc(100vw * 0.67);
+  width: 100%;
+  background-position: center left;
+  background-size: cover;
+  margin-bottom: 1rem;
+}
+.featured-article .featured-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: auto;
+  max-height: calc(100vw * 0.67);
+  width: 100%;
+  background-color: var(--nl-background-color-darker);
+  opacity: 0.9;
+  margin: 0;
+  padding: 0;
+}
+.featured-content:hover {
+  opacity: 0.99;
+  background-color: #1a1919;
+  transition: all 0.1s ease-in;
+}
+.featured-content .content-title {
+  margin: 1rem 1rem 0 1rem;
+  font-size: 1.25rem;
+  text-shadow: 1px 1px 2px #2b22228f;
+  opacity: 1;
+}
+.featured-content .article-byline {
+  font-style: italic;
+  margin: 0 1rem 1rem 1rem;
+  padding-top: 0.5rem;
+  font-size: 0.875rem;
+  text-shadow: 1px 1px 2px #2b22228f;
+  opacity: 1;
+}
+
+.button-wrapper {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+/* CSS */
+.button {
+  color: var(--nl-color-text);
+  background-color: var(--nl-color-primary);
+  border: 0;
+  box-sizing: border-box;
+  display: flex;
+  font-size: 1rem;
+  justify-content: center;
+  line-height: 1.75rem;
+  padding: 0.75rem 1.65rem;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none #000000 solid;
+  text-decoration-thickness: auto;
+  width: 100%;
+  /* max-width: 300px; */
+  cursor: pointer;
+  box-shadow: 2px 2px #666;
+}
+.button:active {
+  color: var(--nl-color-text);
+  background-color: var(--nl-color-secondary);
+  transform: translateY(3px);
+}
+@media (min-width: 768px) {
+  .button {
+    padding: 0.75rem 3rem;
+    font-size: 1.25rem;
+  }
 }
