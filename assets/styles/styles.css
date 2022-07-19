@@ -53,18 +53,22 @@ article {
   font-family: Helvetica, sans-serif;
   letter-spacing: 1.5px;
 }
+
+.text-color{
+    color: var(--nl-color-text-light);
+}
 .section-padding {
   margin: 0 1rem;
 }
-
+.highlight-section {
+  overflow-x: hidden;
+  margin: 0 -500%;
+  padding: 0.5em 500%;
+  background: var(--nl-background-color-darker);
+}
 .article-byline {
   font-size: 0.75rem;
   color: var(--nl-color-text-light);
-}
-.article-drophead {
-  color: var(--nl-color-text-light);
-}
-.article-headline {
 }
 
 /* divider line */
@@ -79,12 +83,6 @@ article {
   height: 0px;
   border-bottom: 3px solid var(--nl-color-quaternary);
   margin: 0.5rem 0;
-}
-.highlight-section {
-  overflow-x: hidden;
-  margin: 0 -500%;
-  padding: 0.5em 500%;
-  background: var(--nl-background-color-darker);
 }
 
 /* header */

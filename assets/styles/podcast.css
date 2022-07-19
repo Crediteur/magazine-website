@@ -25,10 +25,14 @@
 .podcast-genre{
     padding-bottom: 1.5rem;
 }
+.podcast-genre p{
+    color:var(--nl-color-text-light);
+}
 .podcast-genre h1{
     margin-top: 2rem;
 }
 .podcast .podcast-description{
     padding: 0 1rem;
     font-size: 0.75rem;
+    color:var(--nl-color-text-light);
 }

@@ -1,51 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="The official newsite for Tech." />
-    <title>News Site</title>
 
-    <link href="assets/styles/styles.css" rel="stylesheet" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="The official newsite for Tech." />
+  <title>News Site</title>
 
-  <body>
-    <!-- header -->
-    <header>
-      <section>
-        <!-- logo -->
-        <div><a href="index.html">Logo</a></div>
+  <link href="assets/styles/styles.css" rel="stylesheet" />
+  <link href="assets/styles/about.css" rel="stylesheet" />
+</head>
 
-        <!-- navbar -->
+<body>
+  <!-- header -->
+  <header>
+    <section>
+      <!-- logo -->
+      <div class="logo-wrapper">
+        <a href="index.html">
+          <img class="logo" src="assets\images\news-logo.png" srcset="assets\images\news-logo.svg" />
+        </a>
+      </div>
+
+      <!-- navbar -->
+      <div class="navbar">
         <ul>
           <li><a href="article.html">Featured</a></li>
           <li><a href="news.html">News</a></li>
           <li><a href="podcast.html">Podcasts</a></li>
           <li><a href="about.html">About</a></li>
         </ul>
-
-        <!-- banner -->
-        <div>
-            <img src="">
-        </div>
-      </section>
-    </header>
-
-    <!-- body 1-->
-    <section>
-        <h1>About Us Page</h1>
-        
-        <article></article>
+      </div>
     </section>
+  </header>
 
-    <!-- body 2-->
-    <section></section>
+  <!-- body 1-->
+  <section class="section-padding body-1">
+    <div class="page-start">
+      <h1 class="page-title">About Us</h1>
+      <p>
+        Founded in 1892, the News outlet has long been Canada’s largest daily newspaper.
+        Now a multi-platform news organization, The News company publishes more than 80 newspapers and operates dozens
+        of digital businesses in major Canadian cities through its main City News Brands and Community Brands.
+      </p>
+    </div>
 
-    <!-- footer -->
-    <footer></footer>
+    <div class="body-title">
+      <h1><span>News Staff</span></h1>
+    </div>
 
-    <!-- JS script -->
-    <script type="text/javascript" src="asset/scripts/script.js"></script>
-  </body>
+    <div class="staff-list-row">
+      <div class="staff-list-column">
+        <div class="staff-card">
+          <img src="assets\images\portraits\portrait-1.png" alt="Stock image portrait of a woman">
+          <div class="staff-content">
+            <p class="staff-name">Jane Doe</p>
+            <p class="staff-title">Photographer</p>
+          </div>
+        </div>
+        <div class="staff-card">
+          <img src="assets\images\portraits\portrait-2.png" alt="Stock image portrait of a man">
+          <div class="staff-content">
+            <p class="staff-name">John Doe</p>
+            <p class="staff-title">Editor, Tech</p>
+          </div>
+        </div>
+        <div class="staff-card">
+          <img src="assets\images\portraits\portrait-3.png" alt="Stock image portrait of a woman">
+          <div class="staff-content">
+            <p class="staff-name">Joanne Doe</p>
+            <p class="staff-title">Editor, Culture</p>
+          </div>
+        </div>
+        <div class="staff-card">
+          <img src="assets\images\portraits\portrait-4.png" alt="Stock image portrait of a man">
+          <div class="staff-content">
+            <p class="staff-name">Johnny Doe</p>
+            <p class="staff-title">Editor, Politics</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="staff-list-column">
+        <div class="staff-card">
+          <img src="assets\images\portraits\portrait-5.png" alt="Stock image portrait of a woman">
+          <div class="staff-content">
+            <p class="staff-name">Jacque Doe</p>
+            <p class="staff-title">Executive Producer</p>
+          </div>
+        </div>
+        <div class="staff-card">
+          <img src="assets\images\portraits\portrait-6.png" alt="Stock image portrait of a woman">
+          <div class="staff-content">
+            <p class="staff-name">Jill Doe</p>
+            <p class="staff-title">Sales & Marketing</p>
+          </div>
+        </div>
+        <div class="staff-card">
+          <img src="assets\images\portraits\portrait-7.png" alt="Stock image portrait of a man">
+          <div class="staff-content">
+            <p class="staff-name">Jonathon Doe</p>
+            <p class="staff-title">President</p>
+          </div>
+        </div>
+        <div class="staff-card">
+          <img src="assets\images\portraits\portrait-8.png" alt="Stock image portrait of a woman">
+          <div class="staff-content">
+            <p class="staff-name">Julie Doe</p>
+            <p class="staff-title">Graphic Designer</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- body 2-->
+  <section class="section-padding body-2">
+    <div class="line-thin"></div>
+    <div class="contact-us">
+      <p class="text-color">
+        News is a multi-platform news organization that makes things happen.
+        We are the news organization people turn to when they need help; when they want to see the scales balanced,
+        wrongs righted; when they want powerful people held to account.
+      </p>
+      <img src="assets\images\portraits\urban-sticker-art-on-news-stand.jpg"
+        alt="Urban graffiti stickers on a newspaper box">
+      <p class="contact-us-media">Find us on — <b>Facebook</b>, <b>YouTube</b>, email, <b>Instagram</b>, and more.</p>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer>
+    <section class="section-padding">
+      <!-- logo -->
+      <a href="index.html">
+        <img class="logo" src="assets\images\news-logo.png" srcset="assets\images\news-logo.svg" />
+      </a>
+      <div>
+        <p>Terms of Use • Privacy Notice • Cookie Policy • FAQ • Accessibility • Contact</p>
+        <p>Youtube • Instagram • Facebook</p>
+      </div>
+    </section>
+  </footer>
+
+  <!-- JS script -->
+  <script type="text/javascript" src="asset/scripts/script.js"></script>
+</body>
+
 </html>
