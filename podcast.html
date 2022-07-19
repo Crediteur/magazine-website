@@ -1,51 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="The official newsite for Tech." />
-    <title>News Site</title>
 
-    <link href="assets/styles/styles.css" rel="stylesheet" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="The official newsite for Tech." />
+  <title>News Site</title>
 
-  <body>
-    <!-- header -->
-    <header>
-      <section>
-        <!-- logo -->
-        <div><a href="index.html">Logo</a></div>
+  <link href="assets/styles/styles.css" rel="stylesheet" />
+  <link href="assets/styles/podcast.css" rel="stylesheet" />
+</head>
 
-        <!-- navbar -->
+<body>
+  <!-- header -->
+  <header>
+    <section>
+      <!-- logo -->
+      <div class="logo-wrapper">
+        <a href="index.html">
+          <img class="logo" src="assets\images\news-logo.png" srcset="assets\images\news-logo.svg" />
+        </a>
+      </div>
+
+      <!-- navbar -->
+      <div class="navbar">
         <ul>
           <li><a href="article.html">Featured</a></li>
           <li><a href="news.html">News</a></li>
           <li><a href="podcast.html">Podcasts</a></li>
           <li><a href="about.html">About</a></li>
         </ul>
-
-        <!-- banner -->
-        <div>
-          <img src="" />
-        </div>
-      </section>
-    </header>
-
-    <!-- body 1-->
-    <section>
-      <h1>Podcast Page</h1>
-
-      <article></article>
+      </div>
     </section>
+  </header>
 
-    <!-- body 2-->
-    <section></section>
+  <!-- body 1-->
+  <section class="section-padding body-1">
+    <div class="page-start">
+      <h1 class="page-title">Podcasts</h1>
+      <p class="article-drophead">
+        From catching up on the most important news stories of the day, News audio helps you stay connected the world.
+      </p>
+      <div class="line-thick"></div>
+    </div>
 
-    <!-- footer -->
-    <footer></footer>
+    <!-- featured -->
+    <div class="featured-podcast podcast highlight-section">
+      <h1>Trending Podcast</h1>
+      <img src="assets\images\obama-painting-richard-day-2016.jpg"
+        alt="Obama painting by Richard Day uploaded September 7th, 2016">
+      <iframe height="200px" width="100%" frameborder="no" scrolling="no" seamless="" loading="lazy"
+        src="https://player.simplecast.com/e8fa429b-3cc9-445e-afba-76e1dd1bc7e0?dark=true"></iframe>
+      <p class="podcast-description">
+        The 44th President of the United States sits down with Conan to discuss making the decision to enter
+        publicservice,
+        his lifelong love of writing and latest book A Promised Land, why it’s not as hard as it looks to be funny as
+        the president,
+        and persevering with optimism in the 21st century.
+      </p>
+    </div>
+  </section>
 
-    <!-- JS script -->
-    <script type="text/javascript" src="asset/scripts/script.js"></script>
-  </body>
+  <!-- body 2-->
+  <section class="section-padding body-2">
+    <div class="line-thick"></div>
+    <!-- science -->
+    <div class="podcast-genre">
+      <h1>Science</h1>
+      <p>
+        Shows about everything we don’t know. Join the array of experts and News reporters each week to look at the most
+        fascinating unanswered questions in science.
+      </p>
+      <div class="podcast">
+        <iframe height="200px" width="100%" frameborder="no" scrolling="no" seamless="" loading="lazy"
+          src="https://player.simplecast.com/91dcc78a-656c-49ce-a8d0-daa2c54bba1e?dark=true"></iframe>
+        <p class="podcast-description">
+          Is artificial intelligence a problem, or is the real problem how we’re using the term in the first place?
+          Linguistics professor Emily Bender joins Adam to discuss why we should resist the urge to be impressed when it
+          comes to big tech’s AI promises,
+          and how our belief in the fantasy of A.I. could be worse than the reality.
+        </p>
+      </div>
+      <div class="line-thin"></div>
+      <div class="podcast">
+        <iframe height="200px" width="100%" frameborder="no" scrolling="no" seamless="" loading="lazy"
+          src="https://player.simplecast.com/e5ac537f-d7b5-4db3-9ad0-1bcc5a40dace?dark=true"></iframe>
+        <p class="podcast-description">
+          Nico seeks the help of an unconventional therapist after discovering the truth about her father. With special
+          guest Jason Mantzoukas.
+        </p>
+      </div>
+    </div>
+    <div class="line-thick"></div>
+
+    <!-- social -->
+    <div class="podcast-genre">
+      <h1>Social</h1>
+      <p>
+        News Social brings you discussions between the brightest minds and the deepest thinkers; conversations that will
+        help you navigate the world in a new perspective.
+      </p>
+      <div class="podcast">
+        <iframe height="200px" width="100%" frameborder="no" scrolling="no" seamless="" loading="lazy"
+          src="https://player.simplecast.com/76fa0a7b-aeaa-450a-b4df-0ec7e22682eb?dark=true"></iframe>
+        <p class="podcast-description">
+          Late night host, podcaster, comedian, and legend Conan O’Brien joins Jameela this week to discuss the early
+          days of making Late Night with Conan O’Brien,
+          being 100% Irish, dealing with anxiety and the benefits of cognitive therapy, discovering his depression,
+          getting happier as he gets older, what he wants to do next, and more.
+        </p>
+      </div>
+      <div class="line-thin"></div>
+      <div class="podcast">
+        <iframe height="200px" width="100%" frameborder="no" scrolling="no" seamless="" loading="lazy"
+          src="https://player.simplecast.com/0be92829-7ff7-4c8d-ad31-ed710c07e392?dark=true"></iframe>
+        <p class="podcast-description">
+          Danielle Radford (Screen Junkies, The Great Debate) joins Edgar and Jacquis to talk about wrestling,
+          the perfect temperature for gas, the nerd culture drought, something with tacos and more!
+        </p>
+      </div>
+    </div>
+    <div class="line-thick"></div>
+
+    <!-- television -->
+    <div class="podcast-genre">
+      <h1>Film & Television</h1>
+      <p>
+        Relax in a casual environment as we dig into quirky topics experienced within the media industry.
+      </p>
+      <div class="podcast">
+        <iframe height="200px" width="100%" frameborder="no" scrolling="no" seamless="" loading="lazy"
+          src="https://player.simplecast.com/11b0d27c-1aab-4c8b-8fb0-fe0513c620b5?dark=true"></iframe>
+        <p class="podcast-description">
+          The Office co-stars and best friends, Jenna Fischer and Angela Kinsey, are doing the ultimate The Office
+          re-watch podcast for you.
+          Each week Jenna and Angela will break down an episode of The Office and give exclusive behind the scene
+          stories that only two people who were there,
+          can tell you.
+        </p>
+      </div>
+      <div class="line-thin"></div>
+      <div class="podcast">
+        <iframe height="200px" width="100%" frameborder="no" scrolling="no" seamless="" loading="lazy"
+          src="https://player.simplecast.com/38e9fa0b-5578-4148-9975-93ea59afd326?dark=true"></iframe>
+        <p class="podcast-description">
+          Beloved contest winner Claudia O’Doherty joins Scott once again to talk about fish fingers,
+          how her mom helped her get on the pirate show Our Flag Means Death, and her new show Killing It.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer>
+    <section class="section-padding">
+      <!-- logo -->
+      <a href="index.html">
+        <img class="logo" src="assets\images\news-logo.png" srcset="assets\images\news-logo.svg" />
+      </a>
+      <div>
+        <p>Terms of Use • Privacy Notice • Cookie Policy • FAQ • Accessibility • Contact</p>
+        <p>Youtube • Instagram • Facebook</p>
+      </div>
+    </section>
+  </footer>
+
+  <!-- JS script -->
+  <script type="text/javascript" src="asset/scripts/script.js"></script>
+</body>
+
 </html>

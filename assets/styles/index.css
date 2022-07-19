@@ -71,12 +71,14 @@
 .content-title {
   font-weight: bold;
 }
+.line-1{
+    margin-top:1.5rem;
+}
 
 /* body 2 */
 .body-podcast {
   overflow: hidden;
   border-style: none;
-  /* padding: 0.5rem 0 0 0; */
 }
 .body-podcast img {
   width: calc(100% - 2rem);
