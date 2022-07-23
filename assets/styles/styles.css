@@ -22,13 +22,19 @@ html {
 }
 body {
   font-family: Helvetica, Arial, sans-serif;
-  background-color: var(--nl-background-color-dark);
+  background-color: var(--nl-background-color-darker);
   padding: 0px;
   margin: 0px;
   overflow-x: hidden;
 }
 h1 {
-  color: var(--nl-color-text);
+    color: var(--nl-color-text);
+}
+section {
+    /* set max width, center elements */
+    max-width: 1080px; 
+    margin: 0 auto !important; 
+    float: none !important; 
 }
 
 /* components */
@@ -58,14 +64,21 @@ article {
     color: var(--nl-color-text-light);
 }
 .section-padding {
-  margin: 0 1rem;
+  padding: 0 1rem;
 }
 .highlight-section {
-  overflow-x: hidden;
+    margin:2rem 0;
+    padding:1rem 0;
+    background: var(--nl-background-color-medium);
+    background-image: radial-gradient(circle at 96% 96%,#1a0a23,#0d1727 43%,#121212 73%);
+
+}
+/* .highlight-section {
+  overflow: hidden !important;
   margin: 0 -500%;
   padding: 0.5em 500%;
   background: var(--nl-background-color-darker);
-}
+} */
 .article-byline {
   font-size: 0.75rem;
   color: var(--nl-color-text-light);
@@ -86,18 +99,19 @@ article {
 }
 
 /* header */
-.logo-wrapper {
-  background-color: var(--nl-color-quaternary);
+header{
+    background-color: var(--nl-color-quaternary);
 }
 .logo {
-  width: 200px;
-  filter: invert(100%) drop-shadow(2px 2px 2px rgb(66, 60, 58)) contrast(150%);
+    width: 200px;
+    filter: invert(100%) drop-shadow(2px 2px 2px rgb(66, 60, 58)) contrast(150%);
 }
 .logo:hover {
-  transition: all 0.1s ease-in;
-  filter: invert(80%) drop-shadow(2px 2px 2px rgb(160, 150, 148)) contrast(150%);
+    transition: all 0.1s ease-in;
+    filter: invert(80%) drop-shadow(2px 2px 2px rgb(160, 150, 148)) contrast(150%);
 }
 .navbar {
+  background-color: var(--nl-background-color-darker);
   padding-left: 5rem;
   padding-right: 5rem;
   overflow: hidden;
@@ -131,6 +145,7 @@ article {
 /* footer */
 footer {
   border-top: 5px solid var(--nl-color-quaternary);
+  background: var(--nl-background-color-darker);
 }
 footer section {
   overflow: hidden;

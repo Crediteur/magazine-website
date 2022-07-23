@@ -13,6 +13,8 @@
 .body-title {
   position: relative;
   text-align: left;
+  /* spacing */
+  margin-top: 3rem;
 }
 .body-title:before {
   content: "";
@@ -29,7 +31,7 @@
 .body-title span {
   position: relative;
   z-index: 1;
-  background: var(--nl-background-color-dark);
+  background: var(--nl-background-color-darker);
   /* text padding */
   padding: 0 1rem 0 0;
 }
