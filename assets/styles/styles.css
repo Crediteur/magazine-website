@@ -2,6 +2,7 @@
   --nl-color-primary: #08a4bd;
   --nl-color-secondary: #00635d;
   --nl-color-tertiary: #446df6;
+  /* --nl-color-quaternary: #1059a6; */
   --nl-color-quaternary: #eb5e28;
   --nl-color-quaternary2: #db5622;
 
@@ -10,8 +11,9 @@
   --nl-color-text-hover: #f7f4e9;
   --nl-color-line: #55534f;
 
-  --nl-background-color-darker: #1f2223;
-  --nl-background-color-dark: #272727;
+  --nl-background-color-darkest: #0d0e0f;
+  --nl-background-color-darker: #191B1C;
+  --nl-background-color-dark: #363535;
   --nl-background-color-medium: #5d5d5d;
   --nl-background-color-light: #ccc5b9;
 
@@ -23,8 +25,9 @@ html {
 body {
   font-family: Helvetica, Arial, sans-serif;
   background-color: var(--nl-background-color-darker);
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
+  height:100%;
   overflow-x: hidden;
 }
 h1 {
@@ -69,8 +72,8 @@ article {
 .highlight-section {
     margin:2rem 0;
     padding:1rem 0;
-    background: var(--nl-background-color-medium);
-    background-image: radial-gradient(circle at 96% 96%,#1a0a23,#0d1727 43%,#121212 73%);
+    /* background-image: radial-gradient(circle at 96% 96%,#1a0a23,#0d1727 43%,#121212 73%); */
+    background-image: radial-gradient(circle at 96% 96%,#0e283a,#0d1727 43%,#121212 73%);
 
 }
 /* .highlight-section {
@@ -111,7 +114,7 @@ header{
     filter: invert(80%) drop-shadow(2px 2px 2px rgb(160, 150, 148)) contrast(150%);
 }
 .navbar {
-  background-color: var(--nl-background-color-darker);
+  background-color: var(--nl-background-color-darkest);
   padding-left: 5rem;
   padding-right: 5rem;
   overflow: hidden;
@@ -145,7 +148,7 @@ header{
 /* footer */
 footer {
   border-top: 5px solid var(--nl-color-quaternary);
-  background: var(--nl-background-color-darker);
+  background: var(--nl-background-color-darkest);
 }
 footer section {
   overflow: hidden;

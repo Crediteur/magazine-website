@@ -53,12 +53,12 @@ article .line-thin {
   max-width: 50%;
 }
 .big-row-article .image-wrapper a {
-  display: flex;
+    display: flex;
 }
 .big-row-article .image-wrapper a img {
-  width: 100%;
-  object-fit: cover;
-  aspect-ratio: 3 / 2;
+    object-fit: cover;
+    aspect-ratio: 3 / 2;
+    width: 100%;
 }
 .big-row-article p {
   margin: 0;

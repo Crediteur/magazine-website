@@ -84,13 +84,16 @@
 .featured-article {
   display: flex;
   align-items: flex-end;
-  background-image: url("../images/metaverse-painting-nft-augmented-reality.jpg");
   height: calc(100vw * 0.67);
   width: 100%;
+  max-height: 800px;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  background-image: url("../images/metaverse-painting-nft-augmented-reality.jpg");
   background-position: center left;
   background-size: cover;
-  margin-bottom: 1rem;
 }
+
 .featured-article .featured-content {
   display: flex;
   flex-direction: column;
@@ -99,21 +102,23 @@
   height: auto;
   max-height: calc(100vw * 0.67);
   width: 100%;
-  background-color: var(--nl-background-color-darker);
+  background: var(--nl-background-color-darkest);
   opacity: 0.9;
   margin: 0;
   padding: 0;
+  z-index:0;
 }
 .featured-content:hover {
-  opacity: 0.99;
-  background-color: #1a1919;
-  transition: all 0.1s ease-in;
+    opacity: 0.99;
+    background: linear-gradient(120deg, var(--nl-background-color-darkest) 70%, var(--nl-color-primary) 100%);
+    transition: all 0.1s ease-in;
 }
 .featured-content .content-title {
-  margin: 1rem 1rem 0 1rem;
-  font-size: 1.25rem;
+    margin: 1rem 1rem 0 1rem;
+    font-size: 1.25rem;
   text-shadow: 1px 1px 2px #2b22228f;
   opacity: 1;
+  z-index:10;
 }
 .featured-content .article-byline {
   font-style: italic;
