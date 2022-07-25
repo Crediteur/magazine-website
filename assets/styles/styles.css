@@ -57,10 +57,10 @@ p a {
 p a:hover {
   color: var(--nl-color-text-hover);
 }
-article {
+article{
   font-size: 1rem;
   font-family: Helvetica, sans-serif;
-  letter-spacing: 1.5px;
+  /* letter-spacing: 1.5px; */
 }
 
 .text-color{
@@ -76,12 +76,7 @@ article {
     background-image: radial-gradient(circle at 96% 96%,#0e283a,#0d1727 43%,#121212 73%);
 
 }
-/* .highlight-section {
-  overflow: hidden !important;
-  margin: 0 -500%;
-  padding: 0.5em 500%;
-  background: var(--nl-background-color-darker);
-} */
+
 .article-byline {
   font-size: 0.75rem;
   color: var(--nl-color-text-light);
