@@ -133,8 +133,6 @@
   display: flex;
   justify-content: center;
 }
-
-/* CSS */
 .button {
   color: var(--nl-color-text);
   background-color: var(--nl-color-primary);
