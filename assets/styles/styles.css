@@ -30,7 +30,7 @@ body {
   height:100%;
   overflow-x: hidden;
 }
-h1 {
+h1, h2, h3, p{
     color: var(--nl-color-text);
 }
 section {
@@ -47,24 +47,26 @@ section {
   font-style: italic;
   margin: 1rem 0;
 }
-p {
-  color: var(--nl-color-text);
-}
-p a {
+h2 a, p a {
   text-decoration: none;
   color: inherit;
 }
-p a:hover {
+
+h1 a:hover, h2 a:hover, p a:hover {
   color: var(--nl-color-text-hover);
 }
+
 article{
   font-size: 1rem;
   font-family: Helvetica, sans-serif;
-  /* letter-spacing: 1.5px; */
+  /* letter-spacing: .75px; */
 }
 
 .text-color{
-    color: var(--nl-color-text-light);
+  color: var(--nl-color-text-light);
+}
+.text-italic{
+  font-style:italic;
 }
 .section-padding {
   padding: 0 1rem;
@@ -163,4 +165,29 @@ footer section a .logo {
 footer section div p {
   text-align: center;
   font-size: 0.75rem;
+}
+
+@media screen and (min-width: 600px) {
+  /* scale text */
+  .content .content-title a{
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 768px) {
+  /* scale text */
+  .content .content-title a{
+    font-size: 20px;
+  }
+  .article-byline{
+    font-size: 14px;
+  }
+  .reg-articles .content{
+    padding: 1rem;
+  }
+  .reg-articles .content-title{
+    margin-bottom: 0.5rem;
+  }
+  .reg-articles .row-article .image-wrapper a img {
+    aspect-ratio: 2/1;
+  }
 }

@@ -5,6 +5,18 @@
 }
 .banner-wrapper {
   display: flex;
+  flex-direction: column;
+  align-items:center;
+  text-align:center;
+}
+.banner-wrapper h2{
+  font-size: 1rem;
+}
+.banner-wrapper h2, p{
+  margin: 0.5rem 0 0 0;
+}
+.banner-wrapper .text-color{
+  display: none;
 }
 .body-title {
   position: relative;
@@ -147,6 +159,9 @@
 /* desktop view 600px */
 @media screen and (min-width: 600px) {
   /* body 1: shrink into grid */
+  .banner-wrapper h2{
+    font-size: 20px;
+  }
   .showcase-layout {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -237,6 +252,17 @@
 
 /* desktop view 768px */
 @media screen and (min-width: 768px) {
+  /* body 1 change banner contents */
+  .banner-wrapper .text-color{
+    display: initial;
+    font-size:1.25rem;
+  }
+  .banner-wrapper h2{
+    font-size: 32px;
+  }
+  .banner-wrapper h2, p{
+    margin: 1rem 0;
+  }
   /* body 2: podcast adjustments */
   .body-podcast {
     margin: 0 1rem;
