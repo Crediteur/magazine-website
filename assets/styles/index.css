@@ -11,6 +11,7 @@
 }
 .banner-wrapper h2{
   font-size: 1rem;
+  font-weight: bold;
 }
 .banner-wrapper h2, p{
   margin: 0.5rem 0 0 0;
@@ -101,8 +102,9 @@
   width: calc(100% - 2rem);
   margin: 0 1rem;
 }
-.body-podcast .feature-podcast {
-  margin: 0;
+.body-podcast .feature-podcast *{
+  margin:0;
+  margin-top: 0.75rem;
   padding: 0;
 }
 .body-podcast .feature-podcast iframe {
@@ -110,7 +112,6 @@
   height: 50px;
 }
 .body-podcast p {
-  /* padding: 0 1rem; */
   font-size: 0.75rem;
 }
 .body-podcast .title-podcast{
@@ -259,9 +260,6 @@
   }
   .banner-wrapper h2{
     font-size: 32px;
-  }
-  .banner-wrapper h2, p{
-    margin: 1rem 0;
   }
   /* body 2: podcast adjustments */
   .body-podcast {

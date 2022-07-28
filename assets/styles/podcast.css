@@ -2,7 +2,9 @@ body{
     background-attachment: fixed;
     background-image: radial-gradient(circle at 96% 96%,#0e283a,#0d1727 43%,#121212 73%);
 }
-
+.podcast-genre .podcast iframe{
+    height: 50px;  
+}
 /* body 1 */
 .body-1{
     padding: 2rem 0;
@@ -15,27 +17,38 @@ body{
   margin: 1.5rem 0;
 }
 
-/* body 2 */
+/* trending podcast */
 .body-podcast {
     overflow: hidden;
     border-style: none;
-}
-.body-podcast img {
-width: calc(100% - 2rem);
-margin: 0 1rem;
-}
-.body-podcast .feature-podcast {
-margin: 0;
-padding: 0;
-}
-.body-podcast .feature-podcast iframe {
-width: 100%;
-height: 200px;
-}
-.body-podcast p {
-padding: 0 1rem;
-font-size: 0.75rem;
-}
+  }
+  .body-podcast img {
+    width: calc(100% - 2rem);
+    margin: 0 1rem;
+  }
+  .body-podcast .feature-podcast *{
+    margin:0;
+    margin-top: 0.75rem;
+    padding: 0;
+  }
+  .body-podcast .feature-podcast iframe {
+    width: 100%;
+    height: 50px;
+  }
+  .body-podcast p {
+    font-size: 0.75rem;
+  }
+  .body-podcast .title-podcast{
+    display: flex;
+    justify-content:space-between;
+    margin-bottom: 0.5rem;
+  }
+  .body-podcast .title-podcast h1 {
+    margin-bottom: 0;
+  }
+  .body-podcast .title-podcast p {
+    margin: 0.5rem 0;
+  }
 
 /* body 2 */
 .podcast{
@@ -56,4 +69,56 @@ font-size: 0.75rem;
     padding: 0 1rem;
     font-size: 0.75rem;
     color:var(--nl-color-text-light);
+}
+
+/* desktop view 600px */
+@media screen and (min-width: 600px) {
+    .podcast-genre .podcast iframe{
+        height: 200px;  
+  }
+  /* body 1: feature podcast horizontally */
+  .body-podcast{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    padding: 1rem 0;
+  }
+  .body-podcast .title-podcast{
+    width:50%;
+    display:flex;
+    flex-direction:column;
+    align-items:flex-end;
+    justify-content:center;
+    text-align:end;
+    /* feely margin, maybe move to 768 */
+    margin-right:0.1rem;
+    margin-bottom: 0;
+  }
+  .body-podcast .title-podcast h1{
+    margin-top: 0;
+  }
+  .body-podcast a{
+    width:40%;
+  }
+  .body-podcast .feature-podcast {
+    width:50%;
+  }
+}
+
+/* desktop view 768px */
+@media screen and (min-width: 768px) {
+  /* body 1: feature podcast adjustments */
+  .body-podcast {
+    margin: 0 1rem;
+  }
+  .body-podcast a{
+    width:40%;
+    margin: 0 1rem;
+  }
+  .body-podcast .title-podcast{
+    font-size: 1.32rem;
+  }
+  .body-podcast .title-podcast p{
+    font-size: 1rem;
+  }
 }

@@ -23,7 +23,7 @@ html {
   font-size: 16px;
 }
 body {
-  font-family: Helvetica, Arial, sans-serif;
+  /* font-family: Helvetica, Arial, sans-serif; */
   background-color: var(--nl-background-color-darker);
   padding: 0;
   margin: 0;
@@ -58,7 +58,7 @@ h1 a:hover, h2 a:hover, p a:hover {
 
 article{
   font-size: 1rem;
-  font-family: Helvetica, sans-serif;
+  /* font-family: Helvetica, sans-serif; */
   /* letter-spacing: .75px; */
 }
 
