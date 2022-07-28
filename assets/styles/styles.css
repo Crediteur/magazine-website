@@ -110,13 +110,8 @@ header{
     transition: all 0.1s ease-in;
     filter: invert(80%) drop-shadow(2px 2px 2px rgb(160, 150, 148)) contrast(150%);
 }
-.navbar {
-  background-color: var(--nl-background-color-darkest);
-  padding-left: 5rem;
-  padding-right: 5rem;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
+/* .navbar {
+idea: style search bar to hide whitespace
 }
 .navbar ul {
   display: flex;
@@ -135,7 +130,7 @@ header{
   display: flex;
   justify-content: center;
   width: 100px;
-}
+} */
 
 .banner {
   width: 100%;
