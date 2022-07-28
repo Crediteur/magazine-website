@@ -22,21 +22,42 @@
       <!-- logo -->
       <div class="logo-wrapper">
         <a href="index.html">
-          <img class="logo" src="assets\images\news-logo.png" srcset="assets\images\news-logo.svg" />
+          <img class="logo" src="assets\icons\news-logo.svg"/>
         </a>
       </div>
+      <!-- search box -->
+      <form class="search-box d-flex ms-auto">
+        <img class="search-icon px-2" src="assets\icons\search.svg">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
     </section>
+  </header>
 
       <!-- navbar -->
-      <div class="navbar">
-        <ul>
-          <li><a href="article.html">Featured</a></li>
-          <li><a href="news.html">News</a></li>
-          <li><a href="podcast.html">Podcasts</a></li>
-          <li><a href="about.html">About</a></li>
-        </ul>
+  <nav class="navbar sticky-top navbar-expand-sm navbar-dark px-1">
+    <div class="container-fluid">
+      <a href="index.html" class="navbar-brand">
+        <img class="logo-nav" src="assets\icons\news-logo.svg" height="28" alt="News Logo">
+      </a>
+      <button type="button" class="navbar-toggler ms-auto" data-bs-toggle="collapse" data-bs-target="#navbarCollapse1">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse1">
+        <div class="navbar-nav">
+          <a href="index.html" class="nav-item nav-link">Home</a>
+          <a href="article.html" class="nav-item nav-link">Featured</a>
+          <a href="#" class="nav-item nav-link active-color">News</a>
+          <a href="podcast.html" class="nav-item nav-link">Podcasts</a>
+          <!-- <a href="about.html" class="nav-item nav-link">About</a> -->
+        </div>
+        <div class="navbar-nav ms-auto">
+          <a href="about.html" class="nav-item nav-link">About</a>
+          <a href="" class="nav-item nav-link disabled">Sign In</a>
+        </div>
       </div>
-  </header>
+    </div>
+  </nav>
 
   <!-- body 1-->
   <section class="section-padding body-1">
@@ -243,17 +264,47 @@
     <section class="section-padding">
       <!-- logo -->
       <a href="index.html">
-        <img class="logo" src="assets\images\news-logo.png" srcset="assets\images\news-logo.svg" />
+        <img class="logo" src="assets\icons\news-logo.png" srcset="assets\icons\news-logo.svg" />
       </a>
-      <div>
-        <p>Terms of Use • Privacy Notice • Cookie Policy • FAQ • Accessibility • Contact</p>
-        <p>Youtube • Instagram • Facebook</p>
+      <div class="links-wrapper">
+        <p>Terms of Use • Privacy Notice • Cookie Policy • FAQ • Accessibility • Press • Contact</p>
+        <div class="links-media">
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+            <p>Twitter • </p>
+            <img src="assets/icons/twitter.svg">
+          </a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+            <p>Instagram • </p>
+            <img src="assets/icons/instagram.svg">
+          </a>
+          <a href="https://rss.com" target="_blank" rel="noopener noreferrer">
+            <p>RSS • </p>
+            <img src="assets/icons/rss.svg">
+          </a>
+          <a href="https://twitch.tv" target="_blank" rel="noopener noreferrer">
+            <p>Twitch</p>
+            <img src="assets/icons/twitch.svg">
+          </a>
+        </div>
+      </div>
+      <div class="newsletter">
+        <p>Subscribe to our e-mail newsletter</p>
+        <form class="search-box d-flex ms-auto">
+          <img class="search-icon px-2" src="assets\icons\search.svg">
+          <input class="form-control me-2" type="search" placeholder="e-mail" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Send</button>
+        </form>
       </div>
     </section>
   </footer>
 
   <!-- JS script -->
-  <script type="text/javascript" src="asset/scripts/script.js"></script>
+  <script type="text/javascript" src="assets/scripts/script.js"></script>
+  
+  <!-- bootstrap script -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

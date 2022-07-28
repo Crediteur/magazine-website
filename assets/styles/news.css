@@ -169,7 +169,7 @@
     align-items: end;
   }
   .showcase-layout .big-row-article .content {
-    padding-top: 0.75rem;
+    padding-top: 0.5rem;
     background-color: rgba(13, 14, 15, 0.85);
     grid-column: 1 / 2;
     grid-row: 1 / 2;
@@ -193,7 +193,7 @@
     /* background-color: rgba(13, 14, 15, 0.90); */
   }
   .showcase-layout .row-article .content {
-    padding-top: 0.75rem;
+    padding-top: 0.5rem;
     background-color: rgba(13, 14, 15, 0.85);
     grid-column: 1 / 2;
     grid-row: 1 / 2;

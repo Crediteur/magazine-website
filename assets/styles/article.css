@@ -18,6 +18,19 @@ article .line-thin {
   margin-bottom: 2rem;
 }
 
+/* drop cap, if supported */
+@supports (initial-letter: 2) or (-webkit-initial-letter: 2) {
+  .article-content > p:nth-of-type(2)::first-letter{
+    color: var(--nl-color-tertiary);
+    opacity: 0.95;
+    font-weight: bold;
+    margin-right: 0.25rem;
+
+    -webkit-initial-letter: 2;
+    initial-letter: 2;
+  }
+}
+
 /* body 2 */
 .body-2 {
   padding: 2rem 0;

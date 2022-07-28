@@ -35,7 +35,7 @@ h1, h2, h3, p{
 }
 section {
     /* set max width, center elements */
-    max-width: 1080px; 
+    max-width: 1200px; 
     margin: 0 auto !important; 
     float: none !important; 
 }
@@ -74,9 +74,7 @@ article{
 .highlight-section {
     margin:2rem 0;
     padding:1rem 0;
-    /* background-image: radial-gradient(circle at 96% 96%,#1a0a23,#0d1727 43%,#121212 73%); */
     background-image: radial-gradient(circle at 96% 96%,#0e283a,#0d1727 43%,#121212 73%);
-
 }
 
 .article-byline {
@@ -100,37 +98,74 @@ article{
 
 /* header */
 header{
-    background-color: var(--nl-color-quaternary);
+  height: auto;
+  background-color: var(--nl-color-quaternary);
+  padding: 0.75rem 0;
+}
+header section{
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
 }
 .logo {
-    width: 200px;
+    margin-left: -2px;
+    width: 140px;
     filter: invert(100%) drop-shadow(2px 2px 2px rgb(66, 60, 58)) contrast(150%);
+}
+.logo-nav {
+    margin-left: -2px;
+    margin-right: -2px;
+    filter: invert(100%) drop-shadow(2px 2px 2px rgb(66, 60, 58)) contrast(150%);
+}
+.logo-nav:hover {
+  transition: all 0.1s ease-in;
+    filter: invert(80%) drop-shadow(1px 1px 1px rgb(160, 150, 148)) contrast(150%);
 }
 .logo:hover {
     transition: all 0.1s ease-in;
     filter: invert(80%) drop-shadow(2px 2px 2px rgb(160, 150, 148)) contrast(150%);
 }
-/* .navbar {
-idea: style search bar to hide whitespace
+/* header search box */
+.search-box{
+  overflow:hidden;
+  /* transform:translate(310px); */
 }
-.navbar ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  list-style: none;
-  height: 40px;
-  width: 600px;
-  padding: 0;
-  margin: 0;
+
+/* idea: style search bar to hide whitespace */
+.navbar > .container-fluid{
+  /* limit nav items space to match side margins */
+  max-width: 1192px; 
 }
-.navbar ul li a {
-  text-decoration: none;
+.navbar{
+  background-color:var(--nl-background-color-darkest);
+}
+/* nav link hover effect */
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+  color: var(--nl-color-text-hover);
+  box-shadow: 0 3px 0
+ var(--nl-color-quaternary);
+  transition: all 0.2s ease-in;
+}
+/* default nav link text color */
+.navbar-dark .navbar-nav .nav-link{
   color: var(--nl-color-text);
-  display: flex;
-  justify-content: center;
-  width: 100px;
-} */
+}
+.navbar .active-color{
+  box-shadow: 0 3px 0
+ var(--nl-color-quaternary);
+}
+.navbar-toggler-icon{
+  margin-right: -15px
+}
+.navbar-dark .navbar-toggler {
+  border: none;
+}
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
 
 .banner {
   width: 100%;
@@ -144,7 +179,8 @@ footer {
 }
 footer section {
   overflow: hidden;
-  height: 16rem;
+  height: 20rem;
+  padding: 50rem 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -160,6 +196,27 @@ footer section a .logo {
 footer section div p {
   text-align: center;
   font-size: 0.75rem;
+}
+footer section div img {
+  display:none;
+  filter:invert(70%);
+}
+footer .links-media{
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  margin: 0;
+}
+footer .links-media a{
+  white-space: nowrap;
+  text-decoration: none;
+  margin: 1rem 0;
+}
+footer .links-media a img:hover{
+  filter:invert(95%);
+}
+footer .newsletter{
+  display:none;
 }
 
 @media screen and (min-width: 600px) {
@@ -184,5 +241,32 @@ footer section div p {
   }
   .reg-articles .row-article .image-wrapper a img {
     aspect-ratio: 2/1;
+  }
+
+  /* expanded footer */
+  footer section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap:1rem
+  }
+  footer div p{
+    text-align: left;
+  }
+  footer .links-wrapper {
+    width: 20%;
+    flex-grow: 0.4;
+  }
+  footer .links-media a p{
+    display: none;
+  }
+  footer .links-media a img{
+    display:flex;
+  }
+  footer .links-media{
+    justify-content: space-evenly;
+  }
+  footer .newsletter{
+    display:initial;
   }
 }
