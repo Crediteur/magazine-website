@@ -17,8 +17,3 @@ function hideNav(){
         lastPosY = window.scrollY;
     }
 }
-
-const searchElement = document.getElementsByClassName('searchIcon')[0];
-const logInElement = document.getElementsByClassName('logInIcon')[0];
-searchElement.addEventListener("click", logInElement.classList.remove('show'));
-logInElement.addEventListener("click", searchElement.classList.remove('show'));

@@ -147,9 +147,11 @@ header:hover{
   transition:all 0.2s ease-in;
 }
 header .icon{
+  -webkit-filter: invert(70%);
   filter: invert(70%);
 }
 header .icon:hover{
+  -webkit-filter: invert(95%);
   filter: invert(95%);
   transition:all 0.2s ease-in;
 }
@@ -167,19 +169,23 @@ header .button{
 .logo {
     margin-left: -2px;
     width: 140px;
+  -webkit-filter: invert(100%);
     filter: invert(100%) drop-shadow(2px 2px 2px rgb(66, 60, 58)) contrast(150%);
 }
 .logo-nav {
     margin-left: -2px;
     margin-right: -2px;
+  -webkit-filter: invert(100%);
     filter: invert(100%) drop-shadow(2px 2px 2px rgb(66, 60, 58)) contrast(150%);
 }
 .logo-nav:hover {
   transition: all 0.1s ease-in;
-    filter: invert(80%) drop-shadow(1px 1px 1px rgb(160, 150, 148)) contrast(150%);
+  -webkit-filter: invert(80%);
+  filter: invert(80%) drop-shadow(1px 1px 1px rgb(160, 150, 148)) contrast(150%);
 }
 .logo:hover {
     transition: all 0.1s ease-in;
+  -webkit-filter: invert(80%);
     filter: invert(80%) drop-shadow(2px 2px 2px rgb(160, 150, 148)) contrast(150%);
 }
 /* header search box */
@@ -266,6 +272,7 @@ footer section div p {
 }
 footer section div img {
   display:none;
+  -webkit-filter: invert(70%);
   filter:invert(70%);
 }
 footer .links-media{
@@ -280,6 +287,7 @@ footer .links-media a{
   margin: 1rem 0;
 }
 footer .links-media a img:hover{
+  -webkit-filter: invert(95%);
   filter:invert(95%);
 }
 footer .newsletter{

@@ -111,8 +111,10 @@
 .contact-us-media img{
   width: 50px;
   margin: 1rem;
+  -webkit-filter: invert(70%);
   filter: invert(70%);
 }  
 .contact-us-media img:hover{
+  -webkit-filter: invert(95%);
   filter: invert(95%);
 }  
