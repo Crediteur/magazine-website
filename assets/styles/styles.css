@@ -36,7 +36,7 @@ h1, h2, h3, p{
 }
 section {
     /* set max width, center elements */
-    max-width: 1200px; 
+    max-width: 900px; 
     margin: 0 auto !important; 
     float: none !important; 
 }
@@ -198,7 +198,7 @@ header .button{
 /* navbar */
 .navbar > .container-fluid{
   /* limit nav items space to match side margins */
-  max-width: 1192px; 
+  max-width: 892px; 
 }
 .navbar{
   background-color:var(--nl-background-color-darkest);

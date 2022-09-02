@@ -224,10 +224,10 @@
   /* body 1 change banner contents */
   .banner-wrapper .text-color{
     display: initial;
-    font-size:1.25rem;
+    font-size:1rem;
   }
   .banner-wrapper h2{
-    font-size: 32px;
+    font-size: 24px;
   }
   /* body 2: podcast adjustments */
   .body-podcast {
