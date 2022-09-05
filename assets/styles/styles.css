@@ -334,12 +334,26 @@ footer .newsletter{
   display:none;
 }
 
+/* hide scroll bar in mobile */
+::-webkit-scrollbar {
+  display: none;
+}
+
 /* ======================================================================== */
 /* desktop view 600px */
 @media screen and (min-width: 600px) {
   /* scale text */
   .content .content-title a{
     font-size: 18px;
+  }
+
+  /* change scroll bar appearance */
+  body::-webkit-scrollbar {
+    display: block;
+    width: 0.75em;
+  }
+  body::-webkit-scrollbar-thumb {
+      background-color: var(--nl-background-color-dark);
   }
 }
 
