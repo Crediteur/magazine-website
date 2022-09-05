@@ -33,7 +33,7 @@ function loadMoreStories() {
 // clickable indicator buttons on details.html banner, check user is on about page
 if (window.location.pathname.includes("about.html")) {
     const banner = document.getElementById("d-banner");
-    const bannerWidth = document.getElementById("d-banner").clientWidth;
+    let bannerWidth = document.getElementById("d-banner").clientWidth;
     const circles = document.getElementsByClassName("detail-circle");
     new ResizeObserver(calc_bannerWidth).observe(banner);
     circles[0].style.opacity = "0.95";
@@ -42,9 +42,7 @@ if (window.location.pathname.includes("about.html")) {
 
     // recalculate element width on window resize (px)
     function calc_bannerWidth() {
-        bannerWidth = Math.max(
-            document.getElementById("d-banner").clientWidth || 0
-        );
+        bannerWidth = Math.max(document.getElementById("d-banner").clientWidth || 0);
     }
 
     // set horizontal scroll by calculating width * index
