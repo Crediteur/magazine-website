@@ -21,16 +21,19 @@
 
 <body>
   <!-- header -->
-  <header">
+  <header>
     <section class="section-padding">
       <!-- collpasing log in form -->
       <div class="d-flex flex-row-reverse align-items-center">
         <div class="collapse fade" id="logInForm">
           <form class="ps-2 input-group input-group-sm me-2">
             <input type="text" class="form-control shadow-none" placeholder="Username" aria-label="Username"
-              aria-describedby="button-addon1">
+              aria-describedby="button-addon1" required>
             <input type="password" class="form-control shadow-none" placeholder="Password" aria-label="Password"
-              aria-describedby="button-addon1">
+              aria-describedby="button-addon1" required>
+            <div class="invalid-feedback">
+              Please choose a username.
+            </div>
             <!-- log in button -->
             <div class="button-wrapper button-header me-2">
               <button class="button" type="button" onclick="location.href='#'">Submit</button>

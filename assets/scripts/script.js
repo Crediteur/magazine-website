@@ -1,6 +1,5 @@
 //===============================================================================================
 // hide navbar and collapse links on downwards scroll
-// header = 50px, nav = ~58px
 window.addEventListener("scroll", hideNav);
 let lastPosY = window.scrollY;
 navbarHeight = 50;
@@ -85,7 +84,8 @@ if (window.location.pathname.includes("about.html")) {
 }
 
 //========================================================================================
-//validate email, change notification default message
+// [15] w3resource. 2022. JavaScript : email validation - w3resource. [online] Available at: [Accessed 5 September 2022].
+// validate email, change notification default message
 function InvalidMsg(textbox) {
     if (textbox.value === "") {
         textbox.setCustomValidity("Required email address");
@@ -99,7 +99,15 @@ function InvalidMsg(textbox) {
 }
 
 //========================================================================================
+// [13] Goncalves, T., 2020. How to Implement Dark Mode with CSS and JavaScript. [online] PullRequest. Available at: [Accessed 4 September 2022]. 
 // switch dark/light themes
+// change icons based on theme
+const themeSwitcher = document.getElementById("theme-switcher");
+if (localStorage.getItem("theme") == "light") {
+    themeSwitcher.src = "assets/icons/moon.svg";
+} else {
+    themeSwitcher.src = "assets/icons/sun.svg";
+}
 document.addEventListener("DOMContentLoaded", function (event) {
     // display theme from local storage
     document.documentElement.setAttribute("data-theme", localStorage.getItem("theme"));
@@ -108,13 +116,11 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
     themeSwitcher.onclick = function () {
         const currentTheme = document.documentElement.getAttribute("data-theme");
-        // change icons based on theme
         if (currentTheme == "light") {
             themeSwitcher.src = "assets/icons/sun.svg";
         } else {
             themeSwitcher.src = "assets/icons/moon.svg";
         }
-
         // Switch between `dark` and `light`
         const switchToTheme = currentTheme === "dark" ? "light" : "dark";
         
