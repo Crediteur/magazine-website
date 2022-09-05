@@ -1,3 +1,6 @@
+/* ======================================================================== */
+/* about.html stylesheet */
+
 /* body 1 */
 .body-1 {
   margin-bottom: 2rem;
@@ -7,14 +10,15 @@
 }
 .page-title {
   font-style: normal;
-  margin: 1.5rem 0;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 .body-title {
   position: relative;
   text-align: left;
   /* spacing */
-  margin-top: 3rem;
+  margin-top: 4rem;
 }
 .body-title:before {
   content: "";
@@ -36,6 +40,66 @@
   padding: 0 1rem 0 0;
 }
 
+/* ======================================================================== */
+/* horizontal scrolling banner */
+.banner {
+  width: 100%;
+  max-height: 100vh;
+  background-position: center top;
+  background-size: cover;
+}
+
+.detail-banner{
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+  overflow-y:hidden;
+  min-height:300px;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  overflow: hidden;
+}
+
+.detail-banner div{
+  display:flex;
+  scroll-snap-align: start;
+}
+
+.detail-banner div img{
+  /* width:100vw; */
+  width:min(100vw, 900px);
+  object-fit: cover;
+}
+
+/* scroll indicator buttons */
+.banner-buttons{
+  display:flex;
+  justify-content:center;
+  position: relative;
+  margin-bottom: -60px;
+  white-space: nowrap;
+  top:-55px;    
+}
+
+.detail-circle{
+  display: inline-block;
+  background-color: rgb(192, 192, 192);
+  height: 38px;
+  width: 38px;
+  border-radius: 50%;
+  margin-left:6px;
+  margin-right:6px;
+  opacity: 0.5;
+  transition: background-color 0.4s;
+}
+
+.detail-circle:hover{
+  background-color: var(--nl-color-quaternary);
+  opacity: 0.95;
+}
+
+/* ======================================================================== */
+/* staff list */
 .staff-list-row {
   display: flex;
   flex-direction: row;
@@ -76,45 +140,44 @@
   color: var(--nl-color-text-light);
 }
 
+/* ======================================================================== */
 /* body 2 */
 .body-2 {
   margin-bottom: 2rem;
 }
 .contact-us {
-  margin-top: 2rem;
-}
-.contact-us p {
-  text-align: center;
-}
-
-.contact-us img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;
+  margin-top: 4rem;
 }
 
 .contact-us-media{
   display: flex;
   flex-direction:column;
-  justify-content: center;
   margin:1rem 0;
 }
 .contact-us-media .icons-media{
   display: flex;
   flex-direction: row;
-  justify-content:center;
+  justify-content:start;
 }
 .contact-us-media p{
-  margin-bottom:0;
+  margin-bottom:10px;
 }
 .contact-us-media img{
-  width: 50px;
-  margin: 1rem;
-  -webkit-filter: invert(70%);
-  filter: invert(70%);
+  width: 30px;
+  margin-right: 1rem;
+  -webkit-filter: invert(var(--invert-80));
+  filter: invert(var(--invert-80));
 }  
 .contact-us-media img:hover{
-  -webkit-filter: invert(95%);
-  filter: invert(95%);
+  -webkit-filter: invert(var(--invert));
+  filter: invert(var(--invert));
 }  
+
+.contact-map p{
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.contact-map {
+  padding-bottom: 2rem;
+}

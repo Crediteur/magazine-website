@@ -5,20 +5,23 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="The official newsite for Tech." />
-  <title>News Site</title>
+  <meta name="description" content="The all-inclusive one stop news website for technology." />
+  <meta name="keywords" content="news, magazine, technology" />
+    <title>The Top Tech News™ Outlet</title>
+    <link rel="icon" type="image/x-icon" href="assets\icons\news-logo.svg">
 
   <!-- bootstrap 5 lib -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
+ 
+  <!-- regular stylesheets -->
   <link href="assets/styles/styles.css" rel="stylesheet" />
   <link href="assets/styles/article.css" rel="stylesheet" />
 </head>
 
 <body>
   <!-- header -->
-  <header class="">
+  <header>
     <section class="section-padding">
       <!-- collpasing log in form -->
       <div class="d-flex flex-row-reverse align-items-center">
@@ -71,15 +74,16 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse1">
         <div class="navbar-nav">
-          <a href="index.html" class="nav-item nav-link">Home</a>
-          <a href="#" class="nav-item nav-link active-color">Featured</a>
-          <a href="news.html" class="nav-item nav-link">News</a>
-          <a href="podcast.html" class="nav-item nav-link">Podcasts</a>
-          <!-- <a href="about.html" class="nav-item nav-link">About</a> -->
+          <a href="index.html" class="nav-item nav-link me-auto">Home</a>
+          <a href="#" class="nav-item nav-link me-auto active-color">Featured</a>
+          <a href="news.html" class="nav-item nav-link me-auto">News</a>
+          <a href="podcast.html" class="nav-item nav-link me-auto">Podcasts</a>
         </div>
         <div class="navbar-nav ms-auto">
-          <a href="about.html" class="nav-item nav-link">About</a>
-          <a href="" class="nav-item nav-link disabled">Shop</a>
+          <div class="d-flex justify-content-between">
+            <a href="about.html" class="nav-item nav-link me-auto">About</a>
+            <img class="icon ps-2 d-flex" id="theme-switcher" src="assets\icons\sun.svg">
+          </div>
         </div>
       </div>
     </div>
@@ -89,12 +93,12 @@
   <section class="section-padding body-1">
     <h1>The government detectives and private eyes of the crypto age</h1>
     <p class="text-color">The government is looking for tech-savvy detectives who can crack down on crypto.</p>
-    <p class="article-byline">By <a href="about.html">John Doe</a> | @johndoe | July 2, 2022</p>
+    <p class="article-byline">By <a href="about.html">John Doe</a> | <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">@johndoe</a> | July 2, 2022</p>
   </section>
 
   <!-- banner -->
   <section>
-    <div class="banner-wrapper">
+    <div class="section-padding banner-wrapper">
       <img class="banner" src="assets\images\abstract-crypto-nft-art.jpg" alt="Abstract NFT art" />
       <p class="image-caption">
         The rise of cryptocurrency blossomed into an abstract art called NFTs. Ded Pixto / Adobe Stock
@@ -129,25 +133,28 @@
       <p>Pharetra malesuada augue mauris semper lorem non in semper. Vitae pulvinar ante pharetra nulla et egestas elit
         sagittis. Justo, porta duis tempus nisi. A massa, imperdiet sed nisl. Viverra et ac nulla vel. Lectus habitant
         in mi in pulvinar augue. Diam fames erat ut scelerisque dis. Enim cursus mattis ultrices odio.</p>
+      <p>Enim pulvinar mi amet nec urna vitae, viverra pellentesque. Imperdiet nulla lacinia lorem amet tincidunt nulla
+        ipsum. Egestas diam interdum massa sodales tristique ultrices non turpis. Id et amet sollicitudin velit, non vel
+        orci.</p>
     </article>
   </section>
 
   <!-- body 2-->
-  <section class="body-2">
+  <section class="section-padding body-2 ">
     <div class="body-title">
       <h1><span>Related Stories</span></h1>
     </div>
 
     <article class="big-row-article">
       <div class="image-wrapper">
-        <a href="article.html">
-          <img src="assets\images\abstract-crypto-nft-art.jpg" alt="Abstract NFT art">
+        <a href="article-2.html">
+          <img class="banner" src="assets\images\vr-in-art-and-pop-culture.jpeg" alt="VR art in pop culture" />
         </a>
       </div>
       <div class="content">
-        <p class="content-title"><a href="article.html">The government detectives and private eyes of the crypto age</a>
+        <p class="content-title"><a href="article-2.html">Virtual reality's new frontier: peacekeeping, therapy, and digital paradises</a>
         </p>
-        <p class="article-byline">By <a href="about.html">John Doe</a> | July 2</p>
+        <p class="article-byline">By <a href="about.html">John Doe</a> | July 1</p>
       </div>
     </article>
   </section>
@@ -161,6 +168,7 @@
       </a>
       <div class="links-wrapper">
         <p>Terms of Use • Privacy Notice • Cookie Policy • FAQ • Accessibility • Press • Contact</p>
+        <!-- social media icons -->
         <div class="links-media">
           <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
             <p>Twitter • </p>
@@ -181,11 +189,12 @@
         </div>
       </div>
       <div class="newsletter">
-        <p>Subscribe to our e-mail newsletter</p>
+        <p class="py-1">Subscribe to Our Newsletter!</p>
+
         <form class="search-box d-flex ms-auto">
-          <img class="search-icon px-2" src="assets\icons\search.svg">
-          <input class="form-control me-2" type="search" placeholder="e-mail" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Send</button>
+          <input class="form-control shadow-none me-2 email-valid" oninvalid="InvalidMsg(this);" oninput="InvalidMsg(this);"  
+           name="email" type="email" placeholder="Email" required>
+          <button class="btn btn-success" type="submit">Send</button>
         </form>
       </div>
     </section>

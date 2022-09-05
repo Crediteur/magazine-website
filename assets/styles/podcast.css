@@ -1,10 +1,9 @@
-body{
-    background-attachment: fixed;
-    background-image: radial-gradient(circle at 96% 96%,#0e283a,#0d1727 43%,#121212 73%);
-}
+/* ======================================================================== */
+/* podcast.html stylesheet */
+
 /* body 1 */
 .body-1{
-  padding: 3rem 1rem 0 1rem;
+    padding: 2rem 1rem 2rem 1rem;
 }
 .page-start {
   text-align: center;
@@ -14,7 +13,22 @@ body{
   margin: 1.5rem 0;
 }
 
+/* ======================================================================== */
 /* trending podcast */
+.body-podcast h1 {
+  color: #dbd6d0;
+}
+.body-podcast p {
+  font-size: 0.75rem;
+  color: #bdbaac;
+}
+.button {
+  color: #dbd6d0;
+}
+.highlight-section{
+  padding: 0;
+  margin: 0;
+}
 .body-podcast {
   overflow: hidden;
   border-style: none;
@@ -47,9 +61,10 @@ body{
   margin: 0.5rem 0;
 }
 
+/* ======================================================================== */
 /* body 2 */
-.podcast-genre{
-    padding: 2rem 0;
+.body-2{
+  padding-top: 2rem;
 }
 .podcast-genre h1{
     margin: 1rem 0;
@@ -62,17 +77,17 @@ body{
 .podcast .podcast-description{
     padding: 0 1rem;
     font-size: 0.75rem;
-    color:var(--nl-color-text-light);
+    color:#ccc5b9;
 }
 .podcast-block{
-  background-color: var(--nl-background-color-darker);
-  /* background-color: var(--nl-color-secondary); */
+  background-color: #191B1C;
   padding: 1rem;
 }
 .podcast-list{
   height: 190px;
 }
 
+/* ======================================================================== */
 /* desktop view 600px */
 @media screen and (min-width: 600px) {
   /* body 1: feature podcast horizontally */
@@ -104,6 +119,7 @@ body{
   }
 }
 
+/* ======================================================================== */
 /* desktop view 768px */
 @media screen and (min-width: 768px) {
   /* body 1: feature podcast adjustments */

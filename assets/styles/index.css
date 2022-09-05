@@ -1,3 +1,6 @@
+/* ======================================================================== */
+/* index.html stylesheet */
+
 /* body 1 */
 .banner-wrapper {
   display: flex;
@@ -38,12 +41,13 @@
   /* text padding */
   padding: 0 1.5rem;
 }
+
+/* ======================================================================== */
 .showcase-layout {
   margin-top: 1rem;
   display: flex;
   flex-direction: column;
 }
-
 /* body articles */
 .big-row-article {
   display: flex;
@@ -89,6 +93,7 @@
   margin-top: 1.5rem;
 }
 
+/* ======================================================================== */
 /* body 2 */
 .body-2{
   padding-bottom:2rem;
@@ -110,13 +115,22 @@
   width: 100%;
   height: 50px;
 }
+.body-podcast h1 {
+  color: #dbd6d0;
+}
 .body-podcast p {
   font-size: 0.75rem;
+  color: #bdbaac;
+}
+.button {
+  color: #dbd6d0;
 }
 .body-podcast .title-podcast{
   display: flex;
   justify-content:space-between;
+  margin-top: 1.5rem;
   margin-bottom: 0.5rem;
+
 }
 .body-podcast .title-podcast h1 {
   margin-bottom: 0;
@@ -125,6 +139,27 @@
   margin: 0.5rem 0;
 }
 
+/* ======================================================================== */
+.load-more-stories{
+  padding-top: 1rem;
+}
+
+/* button "load more stories */
+.button-lms {
+  color: var(--nl-color-text);
+  background-color: var(--nl-color-primary);
+  line-height: 1.75rem;
+  padding: 0.75rem 1.65rem;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none #000000 solid;
+  width: 100%;
+}
+.hidden{
+  display: none;
+}
+
+/* ======================================================================== */
 /* desktop view 600px */
 @media screen and (min-width: 600px) {
   /* body 1: shrink into grid */
@@ -148,12 +183,12 @@
   }
   .showcase-layout .big-row-article .content{
     padding-top: 0.5rem;
-    background-color: rgba(13, 14, 15, 0.85);
+    background-color: rgba(var(--nl-color-article), 0.85);
     grid-column: 1 / 2;
     grid-row: 1 / 2;
   }
   .showcase-layout .big-row-article .content:hover{
-    background-color: rgba(13, 14, 15, 1);
+    background-color: rgba(var(--nl-color-article), 1);
   }
   .showcase-layout .big-row-article .image-wrapper{
     grid-column: 1 / 2;
@@ -168,16 +203,16 @@
     display: grid;
     grid-column: auto;
     align-items: end;
-    /* background-color: rgba(13, 14, 15, 0.90); */
+    /* background-color: rgba(var(--nl-color-article), 0.90); */
   }
   .showcase-layout .row-article .content{
     padding-top: 0.5rem;
-      background-color: rgba(13, 14, 15, 0.85);
+      background-color: rgba(var(--nl-color-article), 0.85);
     grid-column: 1 / 2;
     grid-row: 1 / 2;
   }
   .showcase-layout .row-article .content:hover{
-    background-color: rgba(13, 14, 15, 1);
+    background-color: rgba(var(--nl-color-article), 1);
   }
   .showcase-layout .row-article .image-wrapper{
     grid-column: 1 / 2;
@@ -189,7 +224,8 @@
     aspect-ratio: 0.976/1;
     object-fit: cover;
   }
-  
+
+  /* ======================================================================== */
   /* body 2: change to horizontal */
   .body-podcast{
     display:flex;
@@ -207,6 +243,7 @@
     /* feely margin, maybe move to 768 */
     margin-right:0.1rem;
     margin-bottom: 0;
+    margin-top: 0.5rem;
   }
   .body-podcast .title-podcast h1{
     margin-top: 0;
@@ -219,11 +256,12 @@
   }
 }
 
+/* ======================================================================== */
 /* desktop view 768px */
 @media screen and (min-width: 768px) {
   /* body 1 change banner contents */
   .banner-wrapper .text-color{
-    display: initial;
+    display: block;
     font-size:1rem;
   }
   .banner-wrapper h2{
@@ -239,6 +277,7 @@
   }
   .body-podcast .title-podcast{
     font-size: 1.32rem;
+    margin-top: 0.5rem;
   }
   .body-podcast .title-podcast p{
     font-size: 1rem;
@@ -247,5 +286,9 @@
   .button {
     padding: 0.5rem 2rem;
     font-size: 1rem;
+  }
+  .button-lms {
+    padding: 0.75rem 3rem;
+    font-size: 1.25rem;
   }
 }

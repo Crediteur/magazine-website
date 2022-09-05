@@ -1,3 +1,6 @@
+/* ======================================================================== */
+/* article.html, article-2.html stylesheet */
+
 /* body 1 */
 .body-1 {
   padding-top: 2rem;
@@ -9,9 +12,13 @@
 }
 
 .image-caption {
-  margin: 0.4rem 1rem;
+  margin: 0.4rem 0;
   font-size: 0.75rem;
   font-style: italic;
+}
+
+.article-content p{
+    letter-spacing: .25px;
 }
 
 article .line-thin {
@@ -31,9 +38,11 @@ article .line-thin {
   }
 }
 
+/* ======================================================================== */
 /* body 2 */
 .body-2 {
-  padding: 2rem 0;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 .body-title {
   position: relative;
@@ -63,7 +72,7 @@ article .line-thin {
   display: flex;
 }
 .big-row-article .image-wrapper {
-  max-width: 50%;
+  max-width: 35%;
 }
 .big-row-article .image-wrapper a {
     display: flex;
