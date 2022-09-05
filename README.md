@@ -10,3 +10,4 @@ Written in HTML/CSS/JavaScript with Bootstrap 5
 ### Finished website mockup:
 ![Website Mockup](appendix/mockup-tablet.jpg)
 
+CM1040 WebDev Final Project
